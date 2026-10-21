@@ -1,7 +1,7 @@
 // Service worker : hors-ligne + mises à jour automatiques.
 // Réseau d'abord (toujours la dernière version si connecté), cache en secours.
 const CACHE = 'rythme-cache';
-const CORE = ['./', 'index.html', 'manifest.webmanifest', 'fonts/fonts.css', 'icons/icon-192.png', 'icons/icon-512.png', 'icons/apple-touch-icon.png'];
+const CORE = ['./', 'index.html', 'manifest.webmanifest', 'fonts/fonts.css', 'icons/icon-192-v2.png', 'icons/icon-512-v2.png', 'icons/apple-touch-icon-v2.png'];
 
 self.addEventListener('install', e => {
   self.skipWaiting();
