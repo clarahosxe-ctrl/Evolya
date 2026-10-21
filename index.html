@@ -2,7 +2,7 @@
 <title>Rythme</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="manifest" href="manifest.webmanifest">
-<meta name="theme-color" content="#0C7A64">
+<meta name="theme-color" content="#EEECE0">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-title" content="Rythme">
@@ -728,7 +728,7 @@ const gauge=l=>{const k={low:1,mid:2,high:3}[l]||2;return '<span class="gauge">'
 /* ---------- views ---------- */
 function chip(ph){return ph?'<span class="chip" style="--c:var('+ph.col+')"><i></i>'+esc(ph.label)+' · J'+ph.day+'</span>':''}
 function bar(v,t,c){const w=t>0?clamp(v/t*100,0,100):0;return '<div class="bar thin" role="img" aria-label="'+Math.round(w)+' %"><i style="width:'+w+'%;--c:var('+c+')"></i></div>'}
-function logo(){return '<span class="logo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 14c2.5-5.5 4.5-5.5 6.5 0s4 5.5 6.5 0c1-2.2 2.4-3.2 5-3"/></svg></span>'}
+function logo(){return '<span class="logo"><img src="icons/logo.png" alt="" style="width:100%;height:100%;border-radius:inherit;display:block"></span>'}
 
 function head(){
   const showNav=S.tab==='today'&&!S.draft&&!S.cdraft&&!S.adraft&&S.profile;
@@ -1068,7 +1068,7 @@ function renderProfile(){
   const GI={perdre:['trendDown','Perdre du poids','Déficit modéré, protéines élevées'],muscle:['dumbbell','Prendre du muscle','Léger surplus, travail de force'],prendre:['trendUp','Prendre du poids','Surplus plus marqué'],maintenir:['equal','Garder mon poids','Cible de maintien']};
   const R=(name,val,title)=>'<label class="opt"><input type="radio" name="'+name+'" value="'+val+'"'+((p[name]||'')===val||(!p[name]&&name==='pace'&&val==='modere')||(!p[name]&&name==='sex'&&val==='f')?' checked':'')+'><span class="oc"><b>'+title+'</b></span></label>';
   let h='';
-  if(first) h+='<section class="welcome"><span class="logo" style="width:46px;height:46px;border-radius:15px;background:rgba(255,255,255,.14)">'+'<svg viewBox="0 0 24 24" aria-hidden="true" style="width:28px;height:28px;fill:none;stroke:var(--sun);stroke-width:2.2;stroke-linecap:round;stroke-linejoin:round"><path d="M3 14c2.5-5.5 4.5-5.5 6.5 0s4 5.5 6.5 0c1-2.2 2.4-3.2 5-3"/></svg></span><h1>Un plan qui suit ton rythme</h1><p>Repas en photo, séances, fringales, cycle : tout s’adapte à ton objectif. Deux minutes pour le régler.</p></section>';
+  if(first) h+='<section class="welcome"><span class="logo" style="width:46px;height:46px;border-radius:15px"><img src="icons/logo.png" alt="" style="width:100%;height:100%;border-radius:inherit;display:block"></span><h1>Un plan qui suit ton rythme</h1><p>Repas en photo, séances, fringales, cycle : tout s’adapte à ton objectif. Deux minutes pour le régler.</p></section>';
   else{
     const q=pn(),T=targets(q,0);
     h+='<div class="greet"><span class="eyebrow">Mon profil</span><h1>'+(p.name?esc(p.name):'Mes réglages')+'</h1></div>';
