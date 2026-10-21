@@ -1,11 +1,11 @@
 <!doctype html><html><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>Rythme</title>
+<title>Evōlya</title>
 <meta name="claude:viewport-fit-sides" content="cover">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#EEECE0">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-title" content="Rythme">
+<meta name="apple-mobile-web-app-title" content="Evōlya">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
 <link rel="icon" href="icons/icon-192.png">
@@ -14,42 +14,42 @@
 /* Layout: one phone-width column over a soft two-glow backdrop. Deep emerald "hero" cards carry the numbers
    (ring, session), white rounded cards carry the content, a floating pill tab bar sits at the bottom. */
 :root{
-  --bg:#EEF6F2; --surface:#FFFFFF; --soft:#E2EEE8; --fg:#10231D; --muted:#586C64; --line:#D6E4DC;
-  --accent:#0E7C66; --accent-fg:#FFFFFF; --accent-soft:#D5EFE6; --accent-text:#0B6A57;
-  --sun:#FF9B66; --sun2:#FF7A59; --sun-fg:#2A1306;
-  --hero1:#0C7A64; --hero2:#083F36; --hero-fg:#FFFFFF; --hero-mute:rgba(255,255,255,.82);
-  --prot:#3B7DDD; --carb:#D99A12; --fat:#D6467A; --fib:#5E9A3A; --warn:#B4561B; --warn-soft:#FBE7D8;
-  --ph-m:#D6467A; --ph-f:#1F9A6B; --ph-o:#D99A12; --ph-l:#7A62C9;
-  --m-petit:#EE8A4A; --m-midi:#0E9A7B; --m-gouter:#D49A12; --m-soir:#6A62D6;
-  --blob1:rgba(255,155,102,.30); --blob2:rgba(14,124,102,.20);
-  --shadow:0 1px 2px rgba(10,50,40,.06),0 14px 30px -14px rgba(10,50,40,.24);
+  --bg:#EEECE0; --surface:#F8F6EF; --soft:#E4E1D2; --fg:#1C1C1A; --muted:#6A675B; --line:#D9D5C4;
+  --accent:#1C1C1A; --accent-fg:#F3F1E8; --accent-soft:#E2DFD0; --accent-text:#1C1C1A;
+  --sun:#E7A07A; --sun2:#D77F58; --sun-fg:#2A1306;
+  --hero1:#2B2A25; --hero2:#161614; --hero-fg:#F3F1E8; --hero-mute:rgba(243,241,232,.78);
+  --prot:#4F6F9C; --carb:#C08A1E; --fat:#B5506C; --fib:#6B8F4E; --warn:#A8531F; --warn-soft:#F3E1D2;
+  --ph-m:#B5506C; --ph-f:#5E8C6A; --ph-o:#C08A1E; --ph-l:#7A6AB0;
+  --m-petit:#D98A55; --m-midi:#5E8C6A; --m-gouter:#C08A1E; --m-soir:#6F68B0;
+  --blob1:rgba(231,160,122,.28); --blob2:rgba(28,28,26,.07);
+  --shadow:0 1px 2px rgba(40,36,20,.07),0 14px 30px -14px rgba(40,36,20,.28);
   --display:'Bricolage Grotesque','Avenir Next','Segoe UI',system-ui,sans-serif;
   --body:'Figtree','Segoe UI',system-ui,-apple-system,sans-serif;
 }
 @media (prefers-color-scheme: dark){
   :root:not([data-theme="light"]){
-    --bg:#0A1512; --surface:#13221D; --soft:#1B2E27; --fg:#E8F3EE; --muted:#9BB1A8; --line:#25382F;
-    --accent:#4FD1AE; --accent-fg:#04231B; --accent-soft:#17382F; --accent-text:#6FE0C0;
-    --sun:#FFAA78; --sun2:#FF8A66; --sun-fg:#2A1306;
-    --hero1:#12705D; --hero2:#082E27; --hero-fg:#FFFFFF; --hero-mute:rgba(255,255,255,.8);
-    --prot:#79AEF0; --carb:#EBB547; --fat:#EE86A9; --fib:#9CCB75; --warn:#F0A070; --warn-soft:#3A2619;
-    --ph-m:#EE86A9; --ph-f:#55CFA0; --ph-o:#EBB547; --ph-l:#AC9BE8;
-    --m-petit:#FFAA78; --m-midi:#4FD1AE; --m-gouter:#EBB547; --m-soir:#A69EF2;
-    --blob1:rgba(255,155,102,.13); --blob2:rgba(79,209,174,.15);
-    --shadow:0 0 0 1px rgba(255,255,255,.04),0 14px 30px -14px rgba(0,0,0,.65);
+    --bg:#141412; --surface:#1F1F1B; --soft:#2A2A25; --fg:#EEECE0; --muted:#A4A090; --line:#33322B;
+    --accent:#EEECE0; --accent-fg:#1A1A17; --accent-soft:#2D2C26; --accent-text:#EEECE0;
+    --sun:#EDAA85; --sun2:#E0875F; --sun-fg:#2A1306;
+    --hero1:#37362E; --hero2:#1C1C18; --hero-fg:#F3F1E8; --hero-mute:rgba(243,241,232,.78);
+    --prot:#8FB0DE; --carb:#E3B04F; --fat:#E58CA8; --fib:#A2C97F; --warn:#EDA377; --warn-soft:#3A2619;
+    --ph-m:#E58CA8; --ph-f:#8BC9A0; --ph-o:#E3B04F; --ph-l:#B3A6E6;
+    --m-petit:#EDAA85; --m-midi:#8BC9A0; --m-gouter:#E3B04F; --m-soir:#B3A6E6;
+    --blob1:rgba(237,170,133,.12); --blob2:rgba(238,236,224,.05);
+    --shadow:0 0 0 1px rgba(255,255,255,.04),0 14px 30px -14px rgba(0,0,0,.7);
     color-scheme:dark;
   }
 }
 :root[data-theme="dark"]{
-  --bg:#0A1512; --surface:#13221D; --soft:#1B2E27; --fg:#E8F3EE; --muted:#9BB1A8; --line:#25382F;
-  --accent:#4FD1AE; --accent-fg:#04231B; --accent-soft:#17382F; --accent-text:#6FE0C0;
-  --sun:#FFAA78; --sun2:#FF8A66; --sun-fg:#2A1306;
-  --hero1:#12705D; --hero2:#082E27; --hero-fg:#FFFFFF; --hero-mute:rgba(255,255,255,.8);
-  --prot:#79AEF0; --carb:#EBB547; --fat:#EE86A9; --fib:#9CCB75; --warn:#F0A070; --warn-soft:#3A2619;
-  --ph-m:#EE86A9; --ph-f:#55CFA0; --ph-o:#EBB547; --ph-l:#AC9BE8;
-  --m-petit:#FFAA78; --m-midi:#4FD1AE; --m-gouter:#EBB547; --m-soir:#A69EF2;
-  --blob1:rgba(255,155,102,.13); --blob2:rgba(79,209,174,.15);
-  --shadow:0 0 0 1px rgba(255,255,255,.04),0 14px 30px -14px rgba(0,0,0,.65);
+  --bg:#141412; --surface:#1F1F1B; --soft:#2A2A25; --fg:#EEECE0; --muted:#A4A090; --line:#33322B;
+  --accent:#EEECE0; --accent-fg:#1A1A17; --accent-soft:#2D2C26; --accent-text:#EEECE0;
+  --sun:#EDAA85; --sun2:#E0875F; --sun-fg:#2A1306;
+  --hero1:#37362E; --hero2:#1C1C18; --hero-fg:#F3F1E8; --hero-mute:rgba(243,241,232,.78);
+  --prot:#8FB0DE; --carb:#E3B04F; --fat:#E58CA8; --fib:#A2C97F; --warn:#EDA377; --warn-soft:#3A2619;
+  --ph-m:#E58CA8; --ph-f:#8BC9A0; --ph-o:#E3B04F; --ph-l:#B3A6E6;
+  --m-petit:#EDAA85; --m-midi:#8BC9A0; --m-gouter:#E3B04F; --m-soir:#B3A6E6;
+  --blob1:rgba(237,170,133,.12); --blob2:rgba(238,236,224,.05);
+  --shadow:0 0 0 1px rgba(255,255,255,.04),0 14px 30px -14px rgba(0,0,0,.7);
   color-scheme:dark;
 }
 *{box-sizing:border-box}
@@ -96,7 +96,7 @@ button,input,select,textarea{font:inherit;color:inherit}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:48px;padding:12px 20px;border-radius:16px;border:0;background:var(--accent);color:var(--accent-fg);font-weight:600;cursor:pointer;transition:transform .12s ease,filter .12s ease}
 .btn:active{transform:scale(.98)}
 .btn .ic{width:20px;height:20px}
-.btn.sun{background:linear-gradient(135deg,var(--sun),var(--sun2));color:var(--sun-fg);box-shadow:0 12px 24px -12px var(--sun2);font-size:17px;min-height:56px}
+.btn.sun{background:var(--accent);color:var(--accent-fg);box-shadow:0 12px 24px -12px var(--fg);font-size:17px;min-height:56px}
 .btn.tonal{background:var(--surface);color:var(--accent-text);box-shadow:var(--shadow)}
 .btn.ghost{background:transparent;color:var(--fg);box-shadow:inset 0 0 0 1px var(--line)}
 .btn.glass{background:rgba(255,255,255,.16);color:#fff}
@@ -732,7 +732,7 @@ function logo(){return '<span class="logo"><img src="icons/logo.png" alt="" styl
 
 function head(){
   const showNav=S.tab==='today'&&!S.draft&&!S.cdraft&&!S.adraft&&S.profile;
-  let h='<div class="topbar"><div class="brandw">'+logo()+'<span class="brand">Rythme</span></div>';
+  let h='<div class="topbar"><div class="brandw">'+logo()+'<span class="brand">Evōlya</span></div>';
   if(showNav){
     h+='<div class="dnav"><button class="rb" data-act="day" data-v="-1" aria-label="Jour précédent">'+ic('chevL')+'</button><span class="dl">'+esc(new Date(parse(S.viewDate)).toLocaleDateString('fr-FR',{weekday:'short',day:'numeric',month:'short'}))+'</span><button class="rb" data-act="day" data-v="1" aria-label="Jour suivant"'+(S.viewDate>=TODAY?' disabled':'')+'>'+ic('chevR')+'</button></div>';
   }
